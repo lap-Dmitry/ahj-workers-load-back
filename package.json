@@ -1,0 +1,35 @@
+{
+  "name": "ahj-workers-load-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "list": "forever list",
+    "stop": "forever stopall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lap-Dmitry/ahj-workers-load-back.git"
+  },
+  "author": "Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lap-Dmitry/ahj-workers-load-back/issues"
+  },
+  "homepage": "https://github.com/lap-Dmitry/ahj-workers-load-back#readme",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "forever": "^3.0.4",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-slow": "^2.1.0",
+    "koa2-cors": "^2.0.6"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
